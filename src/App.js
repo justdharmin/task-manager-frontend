@@ -454,6 +454,7 @@ function Dashboard({ token, email, onLogout, theme, setTheme }) {
   const greeting = hr < 12 ? "Good morning" : hr < 17 ? "Good afternoon" : "Good evening";
   const today = new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
 
+  // eslint-disable-next-line
   const getDisplayTasks = useMemo(() => {
     let list = tasks;
     if (page === "today") list = tasks.filter(t => t.dueDate?.startsWith(todayStr) || t.createdAt?.startsWith(todayStr));
