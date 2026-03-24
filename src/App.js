@@ -464,7 +464,7 @@ function Dashboard({ token, email, onLogout, theme, setTheme }) {
     if (filter === "done") list = list.filter(t => done[t._id]);
     if (filter === "pending") list = list.filter(t => !done[t._id]);
     return list;
-  }, [tasks, page, filter, search, selectedProject, done]);
+  }, [tasks, page, filter, search, selectedProject, done, todayStr]);
 
   // eslint-disable-next-line
   const projectStats = useMemo(() => {
