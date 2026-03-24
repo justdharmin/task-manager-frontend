@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API = "https://flowmind-backend-h2aw.onrender.com";
 
 // ─── Styles ────────────────────────────────────────────────────────────────
 // mode: "warm" (default) | "deep" (toggle)
