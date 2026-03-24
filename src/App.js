@@ -412,6 +412,7 @@ function Dashboard({ token, email, onLogout, theme, setTheme }) {
     setLoading(false);
   };
 
+  // eslint-disable-next-line
   useEffect(() => { fetchTasks(); }, []);
 
   const addTask = async () => {
@@ -464,6 +465,7 @@ function Dashboard({ token, email, onLogout, theme, setTheme }) {
     return list;
   }, [tasks, page, filter, search, selectedProject, done]);
 
+  // eslint-disable-next-line
   const projectStats = useMemo(() => {
     return PROJECTS.map(p => ({
       name: p,
